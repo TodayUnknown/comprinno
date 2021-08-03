@@ -1,0 +1,28 @@
+ID AND SHIP
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;cin>>t;
+    while(t--){
+        
+        char id;
+        cin>>id;
+        
+        if(id == 'B' || id == 'b'){
+            cout<<"BattleShip\n";
+        }
+        if(id == 'C' || id == 'c'){
+            cout<<"Cruiser\n";
+        }
+        if(id == 'D' || id == 'd'){
+            cout<<"Destroyer\n";
+        }
+        if(id == 'F' || id == 'f'){
+            cout<<"Frigate\n";
+        }
+    }
+	// your code goes here
+	return 0;
+}
