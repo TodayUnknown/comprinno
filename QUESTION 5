@@ -1,0 +1,30 @@
+BEAUTIFUL ARRAY
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int t,n;
+	cin>>t;
+	for(int i=1;i<=t;i++)
+	{
+	    int one=0,two=0,three=0;
+	    cin>>n;
+	    for(int j=0;j<n;j++)
+	    {
+	        int x;
+	        cin>>x;
+	        if(x!=0 && x!=1 && x!=-1)one++;
+	        if(x==-1)two++;
+	        if(x==1)three++;
+	    }
+	    if(two==0 && one<=1 || two==1 && one==0 || two>1 && three>=1 && one==0)
+	        cout<<"yes"<<"\n";
+	    else 
+	        cout<<"no"<<"\n";
+
+	}
+	return 0;
+}
