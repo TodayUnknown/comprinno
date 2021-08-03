@@ -1,0 +1,33 @@
+cats and dogs 
+
+#include<bits/stdc++.h>
+#define ll long long int
+using namespace std;
+
+int main(){
+    int t;
+    cin>>t;
+
+    while(t--){
+       ll c,d,l;
+       cin>>c>>d>>l;
+
+       ll max_legs = (c+d)*4;
+       ll min_legs = 0;
+       
+       if(c <= 2*d){
+           min_legs = 4*d;
+       }
+       else{
+           min_legs = 4*d + 4*(c - 2*d);
+       }
+
+       if(l%4==0 && l<=max_legs && l>=min_legs){
+           cout<<"yes"<<endl;
+       }
+       else{
+           cout<<"no"<<endl;
+       }
+    }
+    return 0;
+}
